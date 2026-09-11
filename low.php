@@ -4,7 +4,7 @@ if( isset( $_GET[ 'Submit' ] ) ) {
     $id = $_GET[ 'id' ];
 
     // Check database
-    $getid  = "SELECT first_name, last_name FROM users WHERE user_id = '$id';";
+       $getid  = "SELECT first_name, last_name FROM users WHERE user_id = '" . $id . "';";
     $result = mysqli_query($GLOBALS["___mysqli_ston"], $getid );
 
     // Get results
